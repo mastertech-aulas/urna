@@ -21,7 +21,9 @@ public class IO {
 		StringBuilder modelo = new StringBuilder();
 		modelo.append("Digite 1 para votar");
 		modelo.append("\n");
-		modelo.append("Digite 2 para sair");
+		modelo.append("Digite 2 para adicionar candidato");
+		modelo.append("\n");
+		modelo.append("Digite 3 para sair");
 		System.out.println(modelo.toString());
 		int menu = IO.scan().nextInt();
 		return menu;
