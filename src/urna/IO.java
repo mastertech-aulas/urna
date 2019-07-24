@@ -7,15 +7,16 @@ public class IO {
 	public static void print(String mensagem) {
 		System.out.println(mensagem);
 	}
+
 	public static void printCandidato(Candidato candidato) {
 		System.out.println(candidato);
 	}
-	
+
 	public static Scanner scan() {
 		Scanner scan = new Scanner(System.in);
 		return scan;
 	}
-	
+
 	public static int menu() {
 		StringBuilder modelo = new StringBuilder();
 		modelo.append("Digite 1 para votar");
@@ -30,5 +31,14 @@ public class IO {
 		System.out.println("Qual o numero do seu Candidato?");
 		int codigo = scan().nextInt();
 		return codigo;
+	}
+
+	public static Candidato novoCandidato() {
+		print("Qual o nome do candidato?");
+		String nome = scan().next();
+		print("Qual o codigo do candidato?");
+		int codigo = scan().nextInt();
+		
+		return new Candidato(nome, codigo);
 	}
 }
