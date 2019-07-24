@@ -22,7 +22,9 @@ public class Sistema {
 				}
 				
 			}else if(resposta == 2) {
+				urna.adicionarCandidato(IO.novoCandidato());
 				
+			}else if(resposta == 3) {
 				controle = false;
 			}
 
